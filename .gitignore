@@ -1,0 +1,24 @@
+# Maven
+target/
+log/
+coverage-report/
+
+#Intellij
+.idea/
+*.iml
+*.iws
+atlassian-ide-plugin.xml
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+#NetBeans
+nb-configuration.xml
+
+# Mac
+.DS_Store
+/target
+
+/bin/
