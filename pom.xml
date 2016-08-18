@@ -11,6 +11,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<jdk.version>1.8</jdk.version>
 		<jetty-version>9.3.11.v20160721</jetty-version>
+		<assembly.lib.directory>${project.build.directory}/temp-assembly-lib</assembly.lib.directory>
 	</properties>
 
 	<dependencies>
@@ -114,7 +115,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<!-- Allow skipping surefire tests without skipping failsafe tests. --> 
+					<!-- Allow skipping surefire tests without skipping failsafe tests. -->
 					<skipTests>${skip.surefire.tests}</skipTests>
 					<argLine>-Xmx1g</argLine>
 					<disableXmlReport>true</disableXmlReport>
@@ -122,6 +123,93 @@
 					<reuseForks>false</reuseForks>
 					<runOrder>random</runOrder>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>pl.project13.maven</groupId>
+				<artifactId>git-commit-id-plugin</artifactId>
+				<version>2.1.12</version>
+				<configuration>
+					<dateFormat>yyyy.MM.dd '@' HH:mm z</dateFormat>
+					<abbrevLength>8</abbrevLength>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>revision</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>org.example.main.Main</mainClass>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+						<manifestEntries>
+							<!-- all of these come from git-commit-id-plugin -->
+							<Commit-Id>${git.commit.id}</Commit-Id>
+							<Build-Number>${git.commit.id.abbrev}</Build-Number>
+							<Build-Timestamp>${git.build.time}</Build-Timestamp>
+							<Build-Branch>${git.branch}</Build-Branch>
+							<Class-Path>lib/</Class-Path>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${assembly.lib.directory}</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+							<prependGroupId>false</prependGroupId>
+							<!-- The following combination removes test and provided deps from 
+								production build -->
+							<includeScope>runtime</includeScope>
+							<excludeScope>provided</excludeScope>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Configure a custom distribution assembly -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<descriptors>
+						<descriptor>assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default-package</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
