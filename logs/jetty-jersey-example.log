@@ -1,0 +1,371 @@
+[INFO ] 2016-08-21 22:25:34.141 [main] log - Logging initialized @507ms
+[INFO ] 2016-08-21 22:25:34.204 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 22:25:34.229 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 22:25:34.341 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 22:25:34.969 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@66629f63{/,null,AVAILABLE}
+[INFO ] 2016-08-21 22:25:35.030 [main] AbstractConnector - Started ServerConnector@439a8f59{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 22:25:35.030 [main] Server - Started @1401ms
+[INFO ] 2016-08-21 22:25:55.622 [main] log - Logging initialized @518ms
+[INFO ] 2016-08-21 22:25:55.686 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 22:25:55.715 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 22:25:55.835 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 22:25:56.438 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@66629f63{/,null,AVAILABLE}
+[INFO ] 2016-08-21 22:25:56.496 [main] AbstractConnector - Started ServerConnector@439a8f59{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 22:25:56.496 [main] Server - Started @1397ms
+[INFO ] 2016-08-21 22:33:01.609 [main] log - Logging initialized @502ms
+[INFO ] 2016-08-21 22:33:01.675 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 22:33:01.700 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 22:33:01.818 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 22:33:02.432 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@6fff253c{/,null,AVAILABLE}
+[INFO ] 2016-08-21 22:33:02.491 [main] AbstractConnector - Started ServerConnector@59dcda3e{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 22:33:02.491 [main] Server - Started @1389ms
+[INFO ] 2016-08-21 22:40:50.947 [main] log - Logging initialized @515ms
+[INFO ] 2016-08-21 22:40:51.010 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 22:40:51.034 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 22:40:51.155 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 22:40:51.835 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@37ebc9d8{/,null,AVAILABLE}
+[INFO ] 2016-08-21 22:40:51.860 [main] AbstractConnector - Started ServerConnector@ec0c838{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 22:40:51.860 [main] Server - Started @1433ms
+[WARN ] 2016-08-21 22:41:06.891 [qtp1338841523-21] / - unavailable
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[WARN ] 2016-08-21 22:41:06.897 [qtp1338841523-21] ServletHandler - 
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[INFO ] 2016-08-21 22:41:25.400 [main] log - Logging initialized @509ms
+[INFO ] 2016-08-21 22:41:25.464 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 22:41:25.488 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 22:41:25.604 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 22:41:26.279 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@37ebc9d8{/,null,AVAILABLE}
+[INFO ] 2016-08-21 22:41:26.295 [main] AbstractConnector - Started ServerConnector@ec0c838{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 22:41:26.296 [main] Server - Started @1410ms
+[WARN ] 2016-08-21 22:41:42.783 [qtp1338841523-20] / - unavailable
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[WARN ] 2016-08-21 22:41:42.787 [qtp1338841523-20] ServletHandler - 
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[INFO ] 2016-08-21 23:01:34.428 [main] log - Logging initialized @504ms
+[INFO ] 2016-08-21 23:01:34.490 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:01:34.514 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:01:34.628 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:01:35.287 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@2416a51{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:01:35.304 [main] AbstractConnector - Started ServerConnector@5cc69cfe{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:01:35.304 [main] Server - Started @1385ms
+[WARN ] 2016-08-21 23:01:42.392 [qtp802581203-19] / - unavailable
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[WARN ] 2016-08-21 23:01:42.398 [qtp802581203-19] ServletHandler - 
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[INFO ] 2016-08-21 23:02:10.739 [main] log - Logging initialized @502ms
+[INFO ] 2016-08-21 23:02:10.800 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:02:10.823 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:02:10.938 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:02:11.594 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@37ebc9d8{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:02:11.610 [main] AbstractConnector - Started ServerConnector@ec0c838{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:02:11.610 [main] Server - Started @1378ms
+[WARN ] 2016-08-21 23:02:16.536 [qtp1338841523-19] / - unavailable
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[WARN ] 2016-08-21 23:02:16.540 [qtp1338841523-19] ServletHandler - 
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[INFO ] 2016-08-21 23:03:11.363 [main] log - Logging initialized @792ms
+[INFO ] 2016-08-21 23:03:11.438 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:03:11.469 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:03:11.616 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:03:12.394 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@6642dc5a{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:03:12.412 [main] AbstractConnector - Started ServerConnector@23706db8{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:03:12.412 [main] Server - Started @1848ms
+[WARN ] 2016-08-21 23:03:16.962 [qtp50699452-22] / - unavailable
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[WARN ] 2016-08-21 23:03:16.966 [qtp50699452-22] ServletHandler - 
+javax.servlet.ServletException: Couldn't find a HealthCheckRegistry instance.
+	at com.codahale.metrics.servlets.HealthCheckServlet.init(HealthCheckServlet.java:74) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at com.codahale.metrics.servlets.AdminServlet.init(AdminServlet.java:60) ~[metrics-servlets-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:496) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.ensureInstance(ServletHolder.java:788) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHolder.prepare(ServletHolder.java:773) ~[jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:578) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [jetty-server-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [jetty-util-9.3.11.v20160721.jar:9.3.11.v20160721]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_31]
+[INFO ] 2016-08-21 23:06:44.573 [main] log - Logging initialized @613ms
+[INFO ] 2016-08-21 23:06:44.650 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:06:44.682 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:06:44.842 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:06:49.231 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@20011bf{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:06:49.251 [main] AbstractConnector - Started ServerConnector@7808f638{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:06:49.252 [main] Server - Started @5298ms
+[INFO ] 2016-08-21 23:10:16.928 [main] log - Logging initialized @519ms
+[INFO ] 2016-08-21 23:10:16.987 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:10:17.012 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:10:17.129 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:10:17.814 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@11dee337{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:10:17.830 [main] AbstractConnector - Started ServerConnector@2baa8d82{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:10:17.831 [main] Server - Started @1428ms
+[INFO ] 2016-08-21 23:10:51.724 [main] log - Logging initialized @512ms
+[INFO ] 2016-08-21 23:10:51.791 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:10:51.815 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:10:51.934 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:10:52.620 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@11dee337{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:10:52.637 [main] AbstractConnector - Started ServerConnector@2baa8d82{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:10:52.637 [main] Server - Started @1429ms
+[INFO ] 2016-08-21 23:11:23.398 [main] log - Logging initialized @520ms
+[INFO ] 2016-08-21 23:11:23.462 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:11:23.487 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:11:23.608 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:11:24.274 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@55f3c410{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:11:24.291 [main] AbstractConnector - Started ServerConnector@791cbf87{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:11:24.291 [main] Server - Started @1418ms
+[INFO ] 2016-08-21 23:13:27.921 [main] log - Logging initialized @515ms
+[INFO ] 2016-08-21 23:13:27.980 [main] JettyServer - Registering Metrics service
+[INFO ] 2016-08-21 23:13:28.009 [main] JettyServer - Registered Metrics service
+[INFO ] 2016-08-21 23:13:28.127 [main] Server - jetty-9.3.11.v20160721
+[INFO ] 2016-08-21 23:13:28.786 [main] ContextHandler - Started o.e.j.s.ServletContextHandler@644c78d4{/,null,AVAILABLE}
+[INFO ] 2016-08-21 23:13:28.803 [main] AbstractConnector - Started ServerConnector@7de0c6ae{HTTP/1.1,[http/1.1]}{localhost:8080}
+[INFO ] 2016-08-21 23:13:28.803 [main] Server - Started @1402ms
