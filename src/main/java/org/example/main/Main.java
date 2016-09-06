@@ -10,17 +10,17 @@ public class Main {
 
   @Parameter(names = { "--port", "-p" }, description = "The port on which to run Jetty")
   private int port = 8080;
-  @Parameter(names = { "--host", "-h" }, description = "The host on which to run Jetty")
+  @Parameter(names = { "--host"}, description = "The host on which to run Jetty")
   private String host = "localhost";
   @Parameter(names = "-console-metrics", description = "Periodically dump Metrics data to the console")
   private boolean consoleMetrics = false;
-  @Parameter(names = "--help", help = true, description = "Displays this help message")
+  @Parameter(names = { "--help", "-h" }, help = true, description = "Displays this help message")
   private boolean help = false;
 
   public static void main(final String[] args) {
     Main main = new Main();
     JCommander jCommander = new JCommander(main, args);
-    jCommander.setProgramName("JCommanderExample");
+    jCommander.setProgramName("java -jar jetty-jersey-example");
     if (main.help) {
       jCommander.usage();
       return;

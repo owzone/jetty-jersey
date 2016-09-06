@@ -130,6 +130,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -199,7 +200,7 @@
 							<classpathPrefix>lib/</classpathPrefix>
 						</manifest>
 						<manifestEntries>
-							<!-- all of these come from git-commit-id-plugin -->
+							<!-- these come from git-commit-id-plugin -->
 							<Commit-Id>${git.commit.id}</Commit-Id>
 							<Build-Number>${git.commit.id.abbrev}</Build-Number>
 							<Build-Timestamp>${git.build.time}</Build-Timestamp>
